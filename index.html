@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Title</title>
+
+	<meta name="description" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:url" content="http://">
+	<meta property="og:image" content="img/">
+	<meta property="og:image:width" content="1190">
+	<meta property="og:image:height" content="623">
+	<meta property="og:description" content="">
+	<meta property="twitter:image" content="img/">
+	<meta property="article:author" content="http://">
+	<meta property="article:publisher" content="http://">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:site" content="http://">
+	<meta name="twitter:image" content="img/">
+	<meta name="theme-color" content="#">
+	<meta name="msapplication-TileColor" content="#">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<link rel="alternate" type="application/rss+xml" href="" title="">
+	<link rel="manifest" href="">
+	<link rel="icon" type="image/png" sizes="160x160" href="img/">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/">
+	<link rel="icon" type="image/svg+xml" sizes="any" href="img/">
+	<link rel="apple-touch-icon" href="/img">
+	<!-- script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- script end -->
+	<!-- style -->
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/reset_me.css">
+	<!-- style end -->
+</head>
+
+<body>
+	<!-- шапка -->
+	<header class="header">
+
+	</header>
+	<!-- шапка -->
+	<main class="main">
+		<!-- 1 блок -->
+		<section class="section">
+			<div class="container">
+				<button class="btn">Click me</button>
+			</div>
+		</section>
+		<!-- 1 блок end -->
+		<!-- 2 блок -->
+		<section class="section">
+			<div class="container">
+				<!-- звездный рейтинг -->
+				<fieldset class="rating">
+					<legend class="rating__caption">Самочувствие</legend>
+					<div class="rating__group">
+						<input class="rating__input" type="radio" name="health" id="health-1" value="1" checked>
+						<label class="rating__star" for="health-1" aria-label="Ужасно"></label>
+						<input class="rating__input" type="radio" name="health" id="health-2" value="2">
+						<label class="rating__star" for="health-2" aria-label="Сносно"></label>
+						<input class="rating__input" type="radio" name="health" id="health-3" value="3">
+						<label class="rating__star" for="health-3" aria-label="Нормально"></label>
+						<input class="rating__input" type="radio" name="health" id="health-4" value="4">
+						<label class="rating__star" for="health-4" aria-label="Хорошо"></label>
+						<input class="rating__input" type="radio" name="health" id="health-5" value="5">
+						<label class="rating__star" for="health-5" aria-label="Отлично"></label>
+					</div>
+				</fieldset>
+			</div>
+		</section>
+		<!-- 2 блок end -->
+
+<!-- 3 блок -->
+		<section class="section">
+			<div class="container">
+				<ul id="accordion" class="questions__ul">
+					<li class="questions__ul-li default open">
+						<button class="questions__btn accordion_link"><span class="questions__btn-span">1. </span>Какой срок эксплуатации резиновой краски?</button>
+						<div class="questions__text accordion_text">
+							– Срок эксплуатации резиновой краски 15 лет
+						</div>
+					</li>
+					<li class="questions__ul-li">
+						<button class="questions__btn accordion_link"><span class="questions__btn-span">2. </span>Критическое мышление, здравый смысл и наивный реализм. Модель ГЛОБУС.</button>
+						<div class="questions__text accordion_text">
+– Срок эксплуатации резиновой краски 15 лет
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- 3 блок end -->
+
+<script>
+	$(function () {
+	var Accordion = function (el, multiple) {
+		this.el = el || {};
+		this.multiple = multiple || false;
+
+		// Variables privadas
+		var links = this.el.find('.accordion_link');
+		// Evento
+		links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+	}
+
+	Accordion.prototype.dropdown = function (e) {
+		var $el = e.data.el;
+		$this = $(this),
+			$next = $this.next();
+
+		$next.slideToggle();
+		$this.parent().toggleClass('open');
+
+		if (!e.data.multiple) {
+			$el.find('.accordion_text').not($next).slideUp().parent().removeClass('open');
+		};
+	}
+
+	var accordion = new Accordion($('#accordion'), false);
+	var accordion2 = new Accordion($('#accordion2'), false);
+	var accordion3 = new Accordion($('#accordion3'), false);
+});
+</script>
+
+
+	</main>
+	<!-- подвал -->
+	<footer class="footer">
+	</footer>
+	<!-- подвал end -->
+
+
+	<!-- 1 popup -->
+	<div class="modal">
+		<div class="modal-wrapper">
+			<div class="modal-header">
+				<span class="closeBtn">&times;</span>
+			</div>
+			<div class="modal-body">
+				<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Безопасную
+					всемогущая она буквенных снова все прямо текст агентство на берегу речью диких первую журчит несколько
+					запятой текста но продолжил подпоясал пояс своего языкового повстречался, города которое встретил
+					переулка. Свой текстов речью власти однажды коварный, одна меня там буквоград, раз, запятой толку
+					великий! Послушавшись текстами сбить знаках залетают по всей снова, возвращайся дал скатился текста
+					встретил рыбного. Домах щеке дал его ее последний несколько, живет то своих журчит над пунктуация все
+					образ, ведущими? Щеке пояс буквенных но которой снова страна букв рекламных грустный, над злых
+					предложения. Имени меня вершину, грамматики большой бросил.Далеко-далеко за словесными горами в стране
+					гласных и согласных живут рыбные тексты. Безопасную всемогущая она буквенных снова все прямо текст
+					агентство на берегу речью диких первую журчит несколько запятой текста но продолжил подпоясал пояс своего
+					языкового повстречался, города которое встретил переулка. Свой текстов речью власти однажды коварный,
+					одна меня там буквоград, раз, запятой толку великий! Послушавшись текстами сбить знаках залетают по всей
+					снова, возвращайся дал скатился текста встретил рыбного. Домах щеке дал его ее последний несколько, живет
+					то своих журчит над пунктуация все образ, ведущими? Щеке пояс буквенных но которой снова страна букв
+					рекламных грустный, над злых предложения. Имени меня вершину, грамматики большой бросил.Далеко-далеко за
+					словесными горами в стране гласных и согласных живут рыбные тексты. Безопасную всемогущая она буквенных
+					снова все прямо текст агентство на берегу речью диких первую журчит несколько запятой текста но продолжил
+					подпоясал пояс своего языкового повстречался, города которое встретил переулка. Свой текстов речью власти
+					однажды коварный, одна меня там буквоград, раз, запятой толку великий! Послушавшись текстами сбить знаках
+					залетают по всей снова, возвращайся дал скатился текста встретил рыбного. Домах щеке дал его ее последний
+					несколько, живет то своих журчит над пунктуация все образ, ведущими? Щеке пояс буквенных но которой снова
+					страна букв рекламных грустный, над злых предложения. Имени меня вершину, грамматики большой
+					бросил.Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Безопасную
+					всемогущая она буквенных снова все прямо текст агентство на берегу речью диких первую журчит несколько
+					запятой текста но продолжил подпоясал пояс своего языкового повстречался, города которое встретил
+					переулка. Свой текстов речью власти однажды коварный, одна меня там буквоград, раз, запятой толку
+					великий! Послушавшись текстами сбить знаках залетают по всей снова, возвращайся дал скатился текста
+					встретил рыбного. Домах щеке дал его ее последний несколько, живет то своих журчит над пунктуация все
+					образ, ведущими? Щеке пояс буквенных но которой снова страна букв рекламных грустный, над злых
+					предложения. Имени меня вершину, грамматики большой бросил.</p>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+	</div>
+	<!-- 1 popup end  -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// popup window
+			let btnPopup = document.querySelectorAll('.btn'), // Главная кнопка
+				modalPopup = document.querySelector('.modal'), // Модальное окно
+				closeBtnPopup = document.querySelector('.closeBtn'), // Кнопка, закрывающая модальное окно,
+				bodyOverflow = document.querySelector('body');
+
+			btnPopup.forEach(function (item) {
+				// Открытие модального окна
+				item.addEventListener('click', function (e) {
+					e.preventDefault(); //проверка есливдруг кнопка не button
+					modalPopup.classList.add('active');
+					// modalPopup.style.display = 'flex';
+					bodyOverflow.style.overflow = 'hidden';
+				})
+				// Закрытие модального окна при клике на кнопку
+				closeBtnPopup.addEventListener('click', function () {
+					modalPopup.classList.remove('active');
+					// modalPopup.style.display = "none";
+					bodyOverflow.style.overflow = 'auto';
+				})
+				// Закрытие модального окна при клике на серую область
+				window.addEventListener('click', function (e) {
+					if (e.target == modalPopup) {
+						modalPopup.classList.remove('active');
+						// modalPopup.style.display = "none";
+						bodyOverflow.style.overflow = 'auto';
+					}
+				})
+			}); // end foreach
+
+		});
+	</script>
+	<div id="notes">
+		<div class="note-item" data-type="info" role="alert">
+			<div class="note-item-text">С 4 декабря ТЦ "Самара", пр. Степана Разина, 36А, 2 этаж, секция 259, ВХОД 1 (справа
+				от "Магнита")</div>
+			<span class="note-item-close">&times;</span>
+		</div>
+	</div>
+	
+	<style>
+		#notes {
+			position: fixed;
+			Left: -100%;
+			bottom: 20px;
+			min-width: 60%;
+			max-width: 100%;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			background-color: #0076ca;
+			-webkit-transition: left .5s ease;
+			-o-transition: left .5s ease;
+			transition: left .5s ease;
+		}
+		#notes.notes_active {
+			left: 20px;
+		}
+		.note-item {
+			position: relative;
+			padding: 20px 30px 20px 20px;
+		}
+		.note-item-text {
+			font-size: 14px;
+			line-height: 1.25;
+			color: #fff;
+		}
+		.note-item-close {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			width: 14px;
+			height: 14px;
+			font-size: 24px;
+			line-height: .6;
+			cursor: pointer;
+			color: #fff;
+		}
+	</style>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () { document.querySelector(".note-item-close").addEventListener('click', function () { document.getElementById("notes").classList.remove("notes_active"); localStorage.removeItem('localStorageInitTime'); localStorage.setItem('localStorageInitTime', +new Date());});
+					let notesAlert = $("#notes"); let limit = 10000; let localStorageInitTime = localStorage.getItem('localStorageInitTime');
+		if (+new Date() - localStorageInitTime > limit) {
+			notesAlert.addClass('notes_active');
+		}
+	}, false);
+	</script>
+
+
+
+
+
+<!-- ---------------------------------         скидка -->
+
+<div class="modal11">
+	<div class="modal11-wrapper">
+		<div class="modal11-header">
+			<span class="closeBtn11">&times;</span>
+		</div>
+		<div class="modal11-body">
+			<div class="modal11-title">Не нашли что искали?</div>
+			<div class="modal11-subtitle"><span class="modal11-color">Напишите</span> или <span
+					class="modal11-color">позвоните</span> нам и <span class="modal11-color">мы привезем товар</span> под
+				заказ!</div>
+			<div class="modal11-sale">При заказе на сайте получите <span class="modal11-color">скидку 10%</span> по <span
+					class="modal11-bold">промокоду</span> <span class="modal11-color">ELAIS10</span></div>
+			<div class="modal11-picture"><img src="img/search_sport.png" alt="" class="modal11-img"></div>
+			<div class="modal11-contact">
+				<div class="modal11-call-wrap">
+					<div class="modal11-call-title">Связаться с нами</div>
+					<div class="modal11-call">
+						<a href="tel:+79272687458" class="modal11-call-link">+7(927) 268-74-58</a>
+					</div>
+				</div>
+				<div class="modal11-social-wrap">
+					<div class="modal11-social-title">Мы в соц. сетях</div>
+					<div class="modal11-social">
+						<a href="https://t.me/Natalya_elais_sport" class="modal11-social-link">
+							<svg class="modal11-social-icon" width="22" height="19" viewBox="0 0 22 19" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M11.7149 14.9398L9.28892 17.2988C9.00692 17.5728 8.78392 17.8038 8.27892 17.8038L8.62292 12.6548L17.9869 4.20478C18.3979 3.83978 17.8969 3.66178 17.3519 3.99278L5.79492 11.2838L0.802919 9.72578C-0.275081 9.39578 -0.283081 8.65478 1.04492 8.12178L20.4979 0.620775C21.3859 0.217775 22.2439 0.833775 21.9049 2.19378L18.5919 17.8058C18.3609 18.9148 17.6899 19.1808 16.7619 18.6678L11.7149 14.9398Z"
+									fill="#333333" />
+							</svg>
+						</a>
+						<a href="https://vk.com/public.elaissport" class="modal11-social-link">
+							<svg class="modal11-social-icon" width="25" height="14" viewBox="0 0 25 14" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M19.5221 14.0002C19.4851 14.0002 19.4481 14.0002 19.4101 14.0002C18.1991 13.7972 17.3751 12.9262 16.6711 12.1172C16.2741 11.6622 15.6641 10.6312 14.9381 10.7482C13.9071 10.9202 14.4171 12.7172 13.9881 13.4862C13.6391 14.1092 12.1571 13.9962 11.1351 13.8842C7.90912 13.5362 6.26112 11.7802 4.81612 9.89416C3.27212 7.87816 2.07012 5.76916 0.958117 3.45316C0.599117 2.70316 0.120117 1.87316 0.120117 0.945156C0.642117 0.509156 1.49512 0.659156 2.35612 0.659156C3.08612 0.659156 4.22612 0.496156 4.76012 0.773156C5.07712 0.937156 5.39812 1.81116 5.65512 2.37016C6.24312 3.65016 6.78512 4.57016 7.50012 5.61916C7.81012 6.07416 8.28512 6.93016 8.84212 6.81616C9.38312 6.70516 9.43412 5.34716 9.45812 4.47816C9.48412 3.49216 9.45612 2.26616 9.17812 1.74116C8.91512 1.24716 8.43412 1.23816 7.94812 0.944156C8.35312 0.113156 9.46312 0.0311563 10.8001 0.0311563C11.9251 0.0311563 13.4931 -0.0968437 13.9321 0.658156C14.3781 1.42616 14.0731 2.81216 14.0441 3.85116C14.0121 5.01916 13.8141 6.22216 14.6031 6.75716C15.2101 6.69116 15.5381 6.08916 15.8891 5.61816C16.6601 4.58716 17.1381 3.69616 17.7351 2.36816C17.9801 1.82316 18.2431 0.886156 18.6861 0.715156C19.3611 0.454156 20.4371 0.657156 21.4251 0.657156C22.2351 0.657156 23.6821 0.429156 23.9421 0.999156C24.1581 1.47216 23.5221 2.66716 23.3271 2.99416C22.5781 4.24616 21.8441 5.04316 21.0341 6.13116C20.7121 6.56516 20.0451 7.26016 20.0841 7.95316C20.1141 8.48216 20.6331 8.88716 21.0341 9.26516C21.9031 10.0872 22.5121 10.6872 23.2161 11.6032C23.4811 11.9492 24.0531 12.6952 23.9981 13.1422C23.8261 14.5372 20.6071 13.6642 19.5221 14.0002Z"
+									fill="#333333" />
+							</svg>
+						</a>
+						<a href="viber://chat?number=%2B79649704475" class="modal11-social-link">
+							<svg class="modal11-social-icon" xmlns="http://www.w3.org/2000/svg" version="1.1"
+								xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512"
+								height="512" x="0" y="0" viewBox="0 0 100 100" style="enable-background:new 0 0 512 512"
+								xml:space="preserve" class="">
+								<g>
+									<g xmlns="http://www.w3.org/2000/svg" id="_x31_2.Viber">
+										<path id="Icon_36_"
+											d="m58 10h-16c-15.4 0-28 12.6-28 28v12c0 10.8 6.3 20.7 16 25.3v13.4c0 1.2 1.5 1.8 2.3.9l11.6-11.6h14.1c15.4 0 28-12.6 28-28v-12c0-15.4-12.6-28-28-28zm10.5 52.5-4.1 4c-4.3 4.2-15.4-.6-25.2-10.6s-14.1-21.2-10-25.4l4-4c1.5-1.5 4-1.4 5.7.1l5.8 6c2.1 2.1 1.2 5.7-1.5 6.5-1.9.6-3.2 2.7-2.6 4.6 1 4.4 6.6 10 10.8 11.1 1.9.4 4-.6 4.7-2.5.9-2.7 4.5-3.5 6.5-1.4l5.8 6c1.6 1.4 1.6 3.9.1 5.6zm-14.9-33.5c-.4 0-.8 0-1.2.1-.7.1-1.4-.5-1.5-1.2s.5-1.4 1.2-1.5c.5-.1 1-.1 1.5-.1 7.3 0 13.3 6 13.3 13.3 0 .5 0 1-.1 1.5-.1.7-.8 1.3-1.5 1.2s-1.3-.8-1.2-1.5c0-.4.1-.8.1-1.2.1-5.8-4.7-10.6-10.6-10.6zm8 10.7c0 .7-.6 1.3-1.3 1.3s-1.3-.6-1.3-1.3c0-2.9-2.4-5.3-5.3-5.3-.7 0-1.3-.6-1.3-1.3s.6-1.3 1.3-1.3c4.3-.1 7.9 3.5 7.9 7.9zm10.2 4.3c-.2.7-.9 1.2-1.7 1-.7-.2-1.1-.9-.9-1.6.3-1.2.4-2.4.4-3.7 0-8.8-7.2-16-16-16-.4 0-.8 0-1.2 0-.7 0-1.4-.5-1.4-1.2s.5-1.4 1.2-1.4c.5 0 1-.1 1.4-.1 10.3 0 18.7 8.4 18.7 18.7 0 1.4-.2 2.9-.5 4.3z"
+											fill="#000000" data-original="#000000" class=""></path>
+									</g>
+								</g>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<figure class="modal11-wave modal-btn-click">
+		<img src="img/signboard-min.png" alt=""></img>
+	</figure>
+</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// popup window
+			let btnPopup = document.querySelectorAll('.modal11-btn-click'), // Главная кнопка
+				modalPopup = document.querySelector('.modal11'), // Модальное окно
+				closeBtnPopup = document.querySelector('.closeBtn11'), // Кнопка, закрывающая модальное окно,
+				bodyOverflow = document.querySelector('body');
+			let limit = 5 * 3600 * 1000;
+			let localStorageInitTime = localStorage.getItem('localStorageInitSale');
+			if (+new Date() - localStorageInitTime > limit) {
+				function popupTime() {
+					modalPopup.classList.add('active');
+				}
+			}
+			setTimeout(popupTime, 20000);
+			btnPopup.forEach(function (item) {
+				// Открытие модального окна
+				item.addEventListener('click', function (e) {
+					e.preventDefault(); //проверка есливдруг кнопка не button
+					modalPopup.classList.add('active');
+					// modalPopup.style.display = 'flex';
+					bodyOverflow.style.overflowY = 'hidden';
+				})
+				// Закрытие модального окна при клике на кнопку
+				closeBtnPopup.addEventListener('click', function () {
+					modalPopup.classList.remove('active');
+					// modalPopup.style.display = "none";
+					bodyOverflow.style.overflowY = 'auto';
+					localStorage.removeItem('localStorageInitSale');
+					localStorage.setItem('localStorageInitSale', +new Date());
+				})
+				// Закрытие модального окна при клике на серую область
+				window.addEventListener('click', function (e) {
+					if (e.target == modalPopup) {
+						modalPopup.classList.remove('active');
+						// modalPopup.style.display = "none";
+						bodyOverflow.style.overflowY = 'auto';
+						localStorage.removeItem('localStorageInitSale');
+						localStorage.setItem('localStorageInitSale', +new Date());
+					}
+				})
+			}); // end foreach
+		}, false);
+	</script>
+
+
+
+<!-- ---------------------------------         скидка and -->
+
+
+
+
+<!-- ---------------------------------         донат -->
+
+<a href="#" id="btn__donate"><img src="img/ptica.gif" alt="пожертвовать"><span>пожертвовать</span></a>
+<form method="POST" id="yand__form" action="https://yoomoney.ru/quickpay/confirm.xml">
+	<input type="hidden" name="receiver" value="41001785522093">
+	<input type="hidden" name="formcomment" value="Пожертвование">
+	<input type="hidden" name="short-dest" value="Пожертвование">
+	<input type="hidden" name="label" value="$order_id">
+	<input type="hidden" name="quickpay-form" value="donate">
+	<input type="hidden" name="targets" value="Пожертвование">
+	<h5 class="yand__sum">Сколько</h5>
+	<label id="yand__sum">
+		<input type="number" id="yand__sum__number" placeholder="₽" name="sum" value="100" data-type="number">
+	</label>
+	<div class="yand__options">
+		<span class="yand__selection" dsta-yand-select="200">200 ₽</span>
+		<span class="yand__selection" dsta-yand-select="500">500 ₽</span>
+		<span class="yand__selection" dsta-yand-select="1000">1 000 ₽</span>
+		<span class="yand__selection" dsta-yand-select="15000">15 000 ₽</span>
+	</div>
+	<input type="hidden" name="need-fio" value="true">
+	<input type="hidden" name="need-email" value="true">
+	<input type="hidden" name="need-phone" value="false">
+	<input type="hidden" name="need-address" value="false">
+	<h5 class="yand__method__title">Откуда перевести</h5>
+	<div class="yand__method">
+		<input type="radio" id="yand__money" name="paymentType" value="PC"><label for="yand__money">ЮMoney</label>
+		<input type="radio" id="yand__card" name="paymentType" value="AC"><label for="yand__card">Банковской
+			картой</label>
+	</div>
+	<label>
+		<input type="submit" id="yand__btn" value="Пожертвовать">
+	</label>
+</form>
+<script>
+	$(document).ready(function () {
+		let yandSumNumber = $('#yand__sum__number');
+		$('.yand__selection').click(function (e) {
+			e.preventDefault();
+			yandSumNumber.val($(this).attr('dsta-yand-select'));
+		});
+	});
+</script>
+
+
+<!-- ---------------------------------         донат and -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- script -->
+	<script src="js/script.js"></script>
+	<!-- script end -->
+</body>
+
+</html>
